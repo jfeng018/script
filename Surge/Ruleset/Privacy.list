@@ -79,9 +79,9 @@ DOMAIN-SUFFIX,oneapm.com
 DOMAIN-SUFFIX,sentry.io
 
 # > 用户行为与点击追踪
+DOMAIN,api.mixpanel.com
 DOMAIN-SUFFIX,hotjar.com
 DOMAIN-SUFFIX,hotjar.io
-DOMAIN-SUFFIX,mixpanel.com
 DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,smartlook.com
