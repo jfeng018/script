@@ -10,7 +10,7 @@ http-request ^https:\/\/app\.bilibili\.com\/x\/v\d\/account\/myinfo script-path=
 http-request ^https?:\/\/(c\.tieba|tiebac)\.baidu\.com\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=百度贴吧_Cookie
 
 # 打开：顺丰APP -> 我的 -> 积分 获取 cookie
-http-response ^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js, requires-body=true, tag=顺丰速运_Cookie
+http-request ^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js, requires-body=true, tag=顺丰速运_Cookie
 
 # 打开：微信途虎养车小程序 -> 我的 -> 积分 获取 cookie
 http-request https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/tuhu.js, tag=途虎养车_Cookie
