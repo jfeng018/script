@@ -3,9 +3,11 @@ $.KEY_login = 'chavy_login_sfexpress'
 
 !(async () => {
   const session = {}
-  session.url = $request.url
-  session.body = $request.body
-  session.headers = $request.headers
+session.url = $request.url
+session.body = $request.body
+const headers = JSON.parse(JSON.stringify($request.headers))
+headers.host = "ccsp-egmas.sf-express.com"
+session.headers = headers
   console.log(JSON.stringify(session))
   if ($.setdata(JSON.stringify(session), $.KEY_login)) {
     $.subt = `获取会话: 成功!`
