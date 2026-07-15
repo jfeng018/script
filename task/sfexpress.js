@@ -16,15 +16,20 @@ $.KEY_login = 'chavy_login_sfexpress'
 
 function loginapp() {
   const loginOpts = $.getjson($.KEY_login)
-  delete loginOpts.headers.Cookie
 
-  return $.http
-    .post(loginOpts)
+  delete loginOpts.headers.Cookie
+  delete loginOpts.headers.cookie
+
+  if (!loginOpts.headers.host) {
+    loginOpts.headers.host = "ccsp-egmas.sf-express.com"
+  }
+
+  return $.http.post(loginOpts)
     .then((resp) => {
       $.login = JSON.parse(resp.body)
     })
     .catch((err) => {
-      console.log(err)
+      throw err
     })
 }
 
