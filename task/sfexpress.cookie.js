@@ -3,9 +3,18 @@ $.KEY_login = 'chavy_login_sfexpress'
 
 !(async () => {
   const session = {}
+
 session.url = $request.url
 session.body = $request.body
-session.headers = $request.headers
+
+const headers = JSON.parse(JSON.stringify($request.headers))
+
+// 补 Host
+headers.host = "ccsp-egmas.sf-express.com"
+
+session.headers = headers
+
+console.log(JSON.stringify(session, null, 2))
 
 console.log("========== SF SESSION ==========")
 console.log("URL:")
