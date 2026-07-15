@@ -17,31 +17,33 @@ $.KEY_login = 'chavy_login_sfexpress'
 function loginapp() {
   const loginOpts = $.getjson($.KEY_login)
 
-  console.log("========== LOGIN REQUEST ==========")
-  console.log("URL:")
-  console.log(loginOpts.url)
-
-  console.log("BODY:")
-  console.log(loginOpts.body)
-
-  console.log("HEADERS:")
-  console.log(JSON.stringify(loginOpts.headers, null, 2))
-
-  // 删除 Cookie（兼容 Cookie 和 cookie）
+  // 删除 Cookie
   delete loginOpts.headers.Cookie
   delete loginOpts.headers.cookie
 
-  return $.http
-    .post(loginOpts)
-    .then((resp) => {
-      console.log("========== LOGIN RESPONSE ==========")
-      console.log(resp.body)
+  // 补 Host（Loon 抓包里有，Surge 没有）
+  loginOpts.headers.host = "ccsp-egmas.sf-express.com"
 
-      $.login = JSON.parse(resp.body)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
+  console.log("========== LOGIN REQUEST ==========")
+  console.log("URL:")
+  console.log(loginOpts.url)
+  console.log("BODY:")
+  console.log(loginOpts.body)
+  console.log("HEADERS:")
+  console.log(JSON.stringify(loginOpts.headers, null, 2))
+
+  return $.http.post(loginOpts).then((resp) => {
+    console.log("========== LOGIN RESPONSE ==========")
+    console.log(resp.body)
+
+    $.login = JSON.parse(resp.body)
+
+    console.log("LOGIN OBJECT:")
+    console.log(JSON.stringify($.login, null, 2))
+  }).catch((err) => {
+    console.log("========== LOGIN ERROR ==========")
+    console.log(JSON.stringify(err))
+  })
 }
 
 function loginweb() {
