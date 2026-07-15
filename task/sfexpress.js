@@ -21,13 +21,10 @@ function loginapp() {
   delete loginOpts.headers.cookie
 
   loginOpts.headers.host = "ccsp-egmas.sf-express.com"
-  
+
   return $.http.post(loginOpts)
     .then((resp) => {
       $.login = JSON.parse(resp.body)
-    })
-    .catch((err) => {
-      throw err
     })
 }
 
