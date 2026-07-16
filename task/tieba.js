@@ -70,7 +70,7 @@ async function main() {
 
   notify(
     NAME,
-    `签到: ${success} | 已签: ${already} | 共: ${bars.length}`,
+    `签到: ${success} | 已签: ${already} | 总计: ${bars.length}`,
     result.join("\n")
   );
 }
