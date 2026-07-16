@@ -18,7 +18,7 @@
       ]
     },
     {
-      "id": "tuhu",
+      "id": "Tuhu",
       "name": "途虎养车",
       "author": "@FoKit",
       "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/tuhu.js",
@@ -49,7 +49,7 @@
       ]
     },
            {
-      "id": "sfexpress",
+      "id": "SFexpress",
       "name": "顺丰速运",
       "keys": ["sfexpress_session"],
       "author": "@wangfei021325, @chavyleung",
