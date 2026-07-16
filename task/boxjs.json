@@ -13,8 +13,8 @@
       "repo": "https://github.com/tutuh/script/tree/master",
       "script": "https://raw.githubusercontent.com/tutuh/script/master/task/relx/relx.js",
       "icons": [
-        "https://raw.githubusercontent.com/tutuh/script/master/task/relx/relx.png",
-        "https://raw.githubusercontent.com/tutuh/script/master/task/relx/relx.png"
+        "https://raw.githubusercontent.com/tutuh/script/master/task/relx/Relx.png",
+        "https://raw.githubusercontent.com/tutuh/script/master/task/relx/Relx.png"
       ]
     },
     {
@@ -24,8 +24,8 @@
       "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/tuhu.js",
       "repo": "",
       "icons": [
-        "https://raw.githubusercontent.com/tutuh/script/master/icons/tuhu.png",
-        "https://raw.githubusercontent.com/tutuh/script/master/icons/tuhu.png"
+        "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/tuhu.png",
+        "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/tuhu.png"
       ],
       "descs_html": ["途虎养车签到"],
       "keys": ["tuhu_token", "tuhu_blackbox"],
@@ -56,8 +56,8 @@
       "repo": "https://github.com/tutuh/script/tree/master",
       "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/sf.js",
       "icons": [
-        "https://raw.githubusercontent.com/tutuh/script/master/icons/sfexpress-Light.png",
-        "https://raw.githubusercontent.com/tutuh/script/master/icons/sfexpress-Color.png"
+        "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/sfexpress-Light.png",
+        "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/sfexpress-Color.png"
       ]
     },
        {
