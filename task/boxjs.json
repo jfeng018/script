@@ -60,18 +60,18 @@
         "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/sfexpress-Color.png"
       ]
     },
-       {
-      "id": "ddmc",
-      "name": "叮咚买菜",
-      "keys": ["ddmc_header"],
-      "author": "@tutuh",
-      "repo": "https://github.com/tutuh/script/tree/master",
-      "script": "https://raw.githubusercontent.com/tutuh/script/master/task/ddmc.js",
-      "icons": [
-        "https://raw.githubusercontent.com/tutuh/script/master/icons/dingdong.png",
-        "https://raw.githubusercontent.com/tutuh/script/master/icons/dingdong.png"
-      ]
-    },
+    {
+  "id": "Baidu_TB",
+  "name": "百度贴吧",
+  "keys": ["TieBa_Cookie"],
+  "author": "@NobyDa",
+  "repo": "https://github.com/tutuh/script/tree/master",
+  "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/tieba.js",
+  "icons": [
+    "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/tieba.png",
+    "https://raw.githubusercontent.com/NobyDa/mini/master/Color/tieba.png"
+  ]
+},
         {
       "id": "Spotify",
       "name": "Spotify歌词翻译",
