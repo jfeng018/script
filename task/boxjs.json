@@ -2,7 +2,7 @@
   "id": "tutuh.app.sub",
   "name": "tutuh应用订阅",
   "author": "@tutuh",
-  "icon": "https://avatars.githubusercontent.com/u/63507813?v=4?s=400",
+  "icon": "https://avatars.githubusercontent.com/u/63507813?v=4&s=400",
   "repo": "https://github.com/tutuh/script",
   "apps": [
     {
@@ -58,8 +58,6 @@
       "icons": [
         "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/tieba.png",
         "https://raw.githubusercontent.com/NobyDa/mini/master/Color/tieba.png"
-      ]
-    }
       ]
     }
   ]
