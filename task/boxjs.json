@@ -20,15 +20,15 @@
     {
       "id": "Tuhu",
       "name": "途虎养车",
+      "keys": ["tuhu_token", "tuhu_blackbox"],
       "author": "@FoKit",
-      "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/tuhu.js",
       "repo": "",
+      "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/tuhu.js",
       "icons": [
         "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/tuhu.png",
         "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/tuhu.png"
       ],
       "descs_html": ["途虎养车签到"],
-      "keys": ["tuhu_token", "tuhu_blackbox"],
       "settings": [
         {
           "id": "tuhu_token",
@@ -48,7 +48,7 @@
         }
       ]
     },
-           {
+    {
       "id": "SFexpress",
       "name": "顺丰速运",
       "keys": ["sfexpress_session"],
@@ -61,23 +61,27 @@
       ]
     },
     {
-  "id": "Baidu_TB",
-  "name": "百度贴吧",
-  "keys": ["TieBa_Cookie"],
-  "author": "@NobyDa",
-  "repo": "https://github.com/tutuh/script/tree/master",
-  "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/tieba.js",
-  "icons": [
-    "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/tieba.png",
-    "https://raw.githubusercontent.com/NobyDa/mini/master/Color/tieba.png"
-  ]
-},
-        {
+      "id": "Baidu_TB",
+      "name": "百度贴吧",
+      "keys": ["TieBa_Cookie"],
+      "author": "@NobyDa",
+      "repo": "https://github.com/tutuh/script/tree/master",
+      "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/tieba.js",
+      "icons": [
+        "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/tieba.png",
+        "https://raw.githubusercontent.com/NobyDa/mini/master/Color/tieba.png"
+      ]
+    },
+    {
       "id": "Spotify",
       "name": "Spotify歌词翻译",
       "keys": ["BaiDu_APP_ID", "BaiDu_SECURITY_KEY"],
       "author": "@dompling",
-      "descs_html":[
+      "icons": [
+        "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico",
+        "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
+      ],
+      "descs_html": [
         "<ol>注册百度翻译个人开发者: <a href=\"http://api.fanyi.baidu.com/register\">开发者注册</a></ol>",
         "<ol>注册后如果需要认证可自行选择是否实人认证(高级版需要验证)</ol>",
         "<ol>开通(通用翻译)API服务: <a href=\"https://fanyi-api.baidu.com/choose\">服务开通</a></ol>",
@@ -98,10 +102,6 @@
           "type": "text",
           "desc": "SECURITY_KEY"
         }
-      ],
-      "icons": [
-        "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico",
-        "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
       ]
     },
     {
@@ -109,14 +109,6 @@
       "name": "Gist备份",
       "keys": ["@gist.token", "@gist.username"],
       "author": "@dompling",
-      "icons": [
-        "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png",
-        "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png"
-      ],
-      "descs_html": [
-        "Token的获取方式:",
-        "头像菜单->\n      Settings ->\n      Developer settings ->\n      Personal access tokens ->\n      Generate new token ->\n      在里面找到 gist 勾选提交"
-      ],
       "scripts": [
         {
           "name": "备份 Gist",
@@ -126,6 +118,14 @@
           "name": "从 Gist 恢复",
           "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js"
         }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png",
+        "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png"
+      ],
+      "descs_html": [
+        "Token的获取方式:",
+        "头像菜单 -> Settings -> Developer settings -> Personal access tokens -> Generate new token -> 在里面找到 gist 勾选提交"
       ],
       "settings": [
         {
@@ -146,6 +146,5 @@
         }
       ]
     }
-    
   ]
 }
