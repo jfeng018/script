@@ -12,7 +12,6 @@ let tokenArr = JSON.parse($persistentStore.read("tuhu_token") || "[]");
 let blackbox = $persistentStore.read("tuhu_blackbox") || "";
 let messages = [];
 
-
 // 入口
 (async () => {
     if (typeof $request !== "undefined") {
@@ -22,7 +21,6 @@ let messages = [];
     }
     $done();
 })();
-
 
 // 主任务
 async function main() {
@@ -57,7 +55,6 @@ async function main() {
     notify(NAME, messages.join("\n"));
 }
 
-
 // 抓Token
 function captureToken() {
     let headers = $request.headers;
@@ -79,7 +76,6 @@ function captureToken() {
     notify(NAME, "Token获取成功 ✅");
 }
 
-
 // 用户信息
 async function userInfo(token) {
     let r = await POST({
@@ -97,7 +93,6 @@ async function userInfo(token) {
     }
     return "";
 }
-
 
 // 签到
 async function checkIn(token, type, name) {
@@ -126,7 +121,6 @@ async function checkIn(token, type, name) {
     return `${name}: 签到失败, ${r.message || JSON.stringify(r)}`;
 }
 
-
 // 获取blackbox
 async function getBlackBox() {
     try {
@@ -144,7 +138,6 @@ async function getBlackBox() {
     }
 }
 
-
 // 查询积分
 async function getIntegral(token) {
     let r = await GET({
@@ -160,7 +153,6 @@ async function getIntegral(token) {
     }
     return "查询积分失败";
 }
-
 
 // GET请求
 function GET(options) {
@@ -180,7 +172,6 @@ function GET(options) {
     });
 }
 
-
 // POST请求
 function POST(options) {
     return new Promise(resolve => {
@@ -198,7 +189,6 @@ function POST(options) {
         });
     });
 }
-
 
 // 通知
 function notify(title, body) {
