@@ -17,7 +17,7 @@
 
 # > 途虎养车 - cl-gateway.tuhu.cn
 # 打开：微信途虎APP 获取 cookie
-途虎养车_Cookie = type=http-request,pattern=https:\/\/cl-gateway\.tuhu\.cn\/.*,requires-body=0,script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/tuhu.js
+途虎养车_Cookie = type=http-request,pattern=https:\/\/cl-gateway\.tuhu\.cn\/.*,requires-body=0,script-path=https://raw.githubusercontent.com/tutuh/script/master/task/tuhu.js
 
 [MITM]
 hostname = %APPEND% app.bilibili.com, c.tieba.baidu.com, tiebac.baidu.com, ccsp-egmas.sf-express.com, cl-gateway.tuhu.cn
