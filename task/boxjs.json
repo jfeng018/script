@@ -6,18 +6,6 @@
   "repo": "https://github.com/tutuh/script",
   "apps": [
     {
-      "id": "Relx_ck",
-      "name": "悦刻签到",
-      "keys": ["ckhdname"],
-      "author": "@tutuh",
-      "repo": "https://github.com/tutuh/script/tree/master",
-      "script": "https://raw.githubusercontent.com/tutuh/script/master/task/relx/relx.js",
-      "icons": [
-        "https://raw.githubusercontent.com/tutuh/script/master/task/relx/Relx.png",
-        "https://raw.githubusercontent.com/tutuh/script/master/task/relx/Relx.png"
-      ]
-    },
-    {
       "id": "Tuhu",
       "name": "途虎养车",
       "keys": ["tuhu_token", "tuhu_blackbox"],
@@ -71,79 +59,7 @@
         "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/tieba.png",
         "https://raw.githubusercontent.com/NobyDa/mini/master/Color/tieba.png"
       ]
-    },
-    {
-      "id": "Spotify",
-      "name": "Spotify歌词翻译",
-      "keys": ["BaiDu_APP_ID", "BaiDu_SECURITY_KEY"],
-      "author": "@dompling",
-      "icons": [
-        "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico",
-        "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
-      ],
-      "descs_html": [
-        "<ol>注册百度翻译个人开发者: <a href=\"http://api.fanyi.baidu.com/register\">开发者注册</a></ol>",
-        "<ol>注册后如果需要认证可自行选择是否实人认证(高级版需要验证)</ol>",
-        "<ol>开通(通用翻译)API服务: <a href=\"https://fanyi-api.baidu.com/choose\">服务开通</a></ol>",
-        "<ol>appid和密钥: <a href=\"http://api.fanyi.baidu.com/manage/developer\">获取 APP_ID、SECURITY_KEY</a></ol>"
-      ],
-      "settings": [
-        {
-          "id": "BaiDu_APP_ID",
-          "name": "百度 APP_ID",
-          "val": null,
-          "type": "text",
-          "desc": "APP_ID"
-        },
-        {
-          "id": "BaiDu_SECURITY_KEY",
-          "name": "百度 SECURITY_KEY",
-          "val": null,
-          "type": "text",
-          "desc": "SECURITY_KEY"
-        }
-      ]
-    },
-    {
-      "id": "gistBackup",
-      "name": "Gist备份",
-      "keys": ["@gist.token", "@gist.username"],
-      "author": "@dompling",
-      "scripts": [
-        {
-          "name": "备份 Gist",
-          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js"
-        },
-        {
-          "name": "从 Gist 恢复",
-          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js"
-        }
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png",
-        "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png"
-      ],
-      "descs_html": [
-        "Token的获取方式:",
-        "头像菜单 -> Settings -> Developer settings -> Personal access tokens -> Generate new token -> 在里面找到 gist 勾选提交"
-      ],
-      "settings": [
-        {
-          "id": "@gist.username",
-          "name": "用户名",
-          "val": null,
-          "type": "text",
-          "placeholder": "github 用户名",
-          "desc": "必填"
-        },
-        {
-          "id": "@gist.token",
-          "name": "Personal access tokens",
-          "val": null,
-          "type": "text",
-          "placeholder": "github personal access tokens",
-          "desc": "必填"
-        }
+    }
       ]
     }
   ]
