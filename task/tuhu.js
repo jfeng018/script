@@ -1,4 +1,11 @@
-// 途虎养车 Surge版
+/**
+ * 途虎养车签到 Surge版
+ * 
+ * 获取会话:
+ * 打开途虎APP 获取 Cookie
+ * 
+ * 运行本脚本签到
+ */
 
 const NAME = "途虎养车";
 let tokenArr = JSON.parse($persistentStore.read("tuhu_token") || "[]");
