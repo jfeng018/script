@@ -7,9 +7,9 @@
 # 打开：哔哩哔哩漫画APP 获取 cookie
 哔哩哔哩漫画_Cookie = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/account\/myinfo,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
 
-# > 百度贴吧 - c.tieba.baidu.com, tiebac.baidu.com
+# > 百度贴吧 - tiebac.baidu.com
 # 打开：百度贴吧APP 获取 cookie
-百度贴吧_Cookie = type=http-request,pattern=^https?:\/\/(c\.tieba|tiebac)\.baidu\.com\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+百度贴吧_Cookie = type=http-request,pattern=https:\/\/tieba\.baidu\.com\/.*,script-path=https://raw.githubusercontent.com/tutuh/script/master/task/tieba.js
 
 # > 顺丰速运 - ccsp-egmas.sf-express.com
 # 打开：顺丰APP -> 我的 -> 积分 获取 cookie
@@ -20,4 +20,4 @@
 途虎养车_Cookie = type=http-request,pattern=https:\/\/cl-gateway\.tuhu\.cn\/.*,requires-body=0,script-path=https://raw.githubusercontent.com/tutuh/script/master/task/tuhu.js
 
 [MITM]
-hostname = %APPEND% app.bilibili.com, c.tieba.baidu.com, tiebac.baidu.com, ccsp-egmas.sf-express.com, cl-gateway.tuhu.cn
+hostname = %APPEND% app.bilibili.com, tiebac.baidu.com, ccsp-egmas.sf-express.com, cl-gateway.tuhu.cn
