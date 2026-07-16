@@ -175,7 +175,6 @@ function GET(options) {
 
 
 // POST请求
-
 function POST(options) {
     return new Promise(resolve => {
         $httpClient.post(options, (err, resp, data) => {
