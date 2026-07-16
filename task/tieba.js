@@ -150,12 +150,18 @@ function getCookie() {
   let ck = $request.headers["Cookie"] || $request.headers["cookie"];
 
   if (ck && ck.includes("BDUSS=")) {
-    $persistentStore.write(ck, COOKIE_KEY);
-    console.log("Cookie获取成功");
-    notify(NAME, "", "Cookie获取成功 🎉");
+    let old = $persistentStore.read(COOKIE_KEY) || "";
+
+    // 判断Cookie是否变化
+    if (ck !== old) {
+      $persistentStore.write(ck, COOKIE_KEY);
+      console.log("Cookie更新成功");
+      notify(NAME, "", "Cookie获取成功 🎉");
+    } else {
+      console.log("Cookie未变化，跳过");
+    }
   } else {
     console.log("Cookie获取失败，缺少BDUSS");
-    notify(NAME, "", "Cookie获取失败，缺少BDUSS");
   }
 }
 
