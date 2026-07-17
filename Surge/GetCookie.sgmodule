@@ -9,7 +9,7 @@
 
 # > 顺丰速运 - ccsp-egmas.sf-express.com
 # 获取方式：APP → 我的 → 积分
-顺丰速运_Cookie = type=http-request,pattern=^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,requires-body=1,script-path=https://raw.githubusercontent.com/tutuh/script/master/task/sf.js
+顺丰速运_Cookie = type=http-request,pattern=^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,requires-body=1,script-path=https://raw.githubusercontent.com/tutuh/script/master/task/sfexpress.js
 
 # > 途虎养车 - cl-gateway.tuhu.cn
 # 获取方式：打开 APP
