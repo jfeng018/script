@@ -56,8 +56,8 @@
       "repo": "https://github.com/tutuh/script/tree/master",
       "script": "https://raw.githubusercontent.com/tutuh/script/refs/heads/master/task/tieba.js",
       "icons": [
-        "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/tieba.png",
-        "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/tieba-Light.png"
+        "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/tieba-Light.png",
+        "https://raw.githubusercontent.com/tutuh/icon/main/iconSet/tieba.png"
       ]
     }
   ]
