@@ -65,7 +65,7 @@ async function main() {
       result.push(`【${bar.forum_name}】签到失败: ${r.msg}`);
     }
 
-    console.log(`${bar.forum_name}: ${r.msg}，等待 ${(wait / 1000).toFixed(2)} 秒`);
+  // console.log(`${bar.forum_name}: ${r.msg}，等待 ${(wait / 1000).toFixed(2)} 秒`);
   }
 
   notify(
