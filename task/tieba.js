@@ -1,12 +1,12 @@
 /*********************************
- 百度贴吧签到 Surge版
-
- 功能:
- 1. 自动获取Cookie
- 2. 自动签到关注贴吧
- 3. 已签到自动跳过
- 4. 未签到随机延迟
-*********************************/
+ * 百度贴吧签到 Surge版
+ * 
+ * 功能:
+ * 1. 自动获取Cookie
+ * 2. 自动签到关注贴吧
+ * 3. 已签到自动跳过
+ * 4. 未签到随机延迟
+ *********************************/
 
 const NAME = "贴吧签到";
 const COOKIE_KEY = "TieBa_Cookie";
@@ -65,7 +65,7 @@ async function main() {
       result.push(`【${bar.forum_name}】签到失败: ${r.msg}`);
     }
 
-  // console.log(`${bar.forum_name}: ${r.msg}，等待 ${(wait / 1000).toFixed(2)} 秒`);
+    // console.log(`${bar.forum_name}: ${r.msg}，等待 ${(wait / 1000).toFixed(2)} 秒`);
   }
 
   notify(
