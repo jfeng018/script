@@ -45,7 +45,7 @@ async function main() {
   let already = 0;
 
   for (let bar of bars) {
-    /* 已签到直接跳过 */
+    // 已签到直接跳过
     if (bar.is_sign == 1) {
       already++;
       result.push(`【${bar.forum_name}】已经签到，等级${bar.user_level}，经验${bar.user_exp}`);
