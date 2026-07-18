@@ -165,9 +165,11 @@ function getCookie() {
       notify(NAME, "", "Cookie获取成功 🎉");
     } else {
       console.log("Cookie未变化，跳过");
+      notify(NAME, "", "Cookie未变化，无需更新");
     }
   } else {
     console.log("Cookie获取失败，缺少BDUSS");
+    notify(NAME, "", "Cookie获取失败，缺少BDUSS");
   }
 }
 
