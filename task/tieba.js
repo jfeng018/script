@@ -28,7 +28,7 @@ async function main() {
     return;
   }
 
-  console.log("开始获取贴吧列表");
+  // console.log("开始获取贴吧列表");
   let data = await getForum();
 
   if (!data || !data.like_forum) {
