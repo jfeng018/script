@@ -56,7 +56,7 @@ let taskList = [];
 })();
 
 function wait(ms) {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
 }
@@ -87,6 +87,7 @@ function requestGet(opts) {
 
 async function loginApp() {
   const data = $persistentStore.read(SF_KEY);
+  
   if (!data) {
     throw "没有顺丰会话";
   }
@@ -181,7 +182,7 @@ async function dailyTask() {
     headers: {
       "Content-Type": "application/json"
     },
-    body: '{"channelType":"1"}'
+    body: JSON.stringify({ channelType: "1" })
   });
 
   const data = JSON.parse(body);
@@ -215,7 +216,7 @@ async function dailyTask() {
   }
 
   console.log(
-    taskList.map(task => `${task.title}: ${task.result || "未完成"}`).join("\n")
+    taskList.map((task) => `${task.title}: ${task.result || "未完成"}`).join("\n")
   );
 }
 
