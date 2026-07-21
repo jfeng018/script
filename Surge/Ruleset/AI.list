@@ -42,15 +42,12 @@ DOMAIN,makersuite.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,aiplatform.googleapis.com
-
 # > Antigravity
 DOMAIN,antigravity.google
 DOMAIN,antigravity-unleash.goog
-
 # > DeepMind
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
-
 # > Gemini
 DOMAIN,ai.google.dev
 DOMAIN,bard.google.com
@@ -58,10 +55,9 @@ DOMAIN,gemini.google.com
 DOMAIN,geller-pa.googleapis.com
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN,proactivebackend-pa.googleapis.com
-
+DOMAIN-SUFFIX,googlevideo.com
 # > NotebookLM
 DOMAIN-KEYWORD,notebooklm.google
-
 # > Search Labs
 DOMAIN-KEYWORD,labs.google
 
@@ -81,9 +77,10 @@ DOMAIN,imagine.meta.com
 DOMAIN,copilot.microsoft.com
 DOMAIN,sydney.bing.com
 DOMAIN,www.bing.com
-
 # > GitHub Copilot
 DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,telemetry.githubusercontent.com
 
 # Perplexity
 DOMAIN-SUFFIX,perplexity.ai
