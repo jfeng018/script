@@ -13,6 +13,8 @@ DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN,api.openai.com
+DOMAIN,platform.openai.com
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,livekit.cloud
 DOMAIN,api.statsig.com
@@ -39,12 +41,16 @@ DOMAIN,aistudio.google.com
 DOMAIN,makersuite.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,aiplatform.googleapis.com
+
 # > Antigravity
 DOMAIN,antigravity.google
 DOMAIN,antigravity-unleash.goog
+
 # > DeepMind
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
+
 # > Gemini
 DOMAIN,ai.google.dev
 DOMAIN,bard.google.com
@@ -52,13 +58,16 @@ DOMAIN,gemini.google.com
 DOMAIN,geller-pa.googleapis.com
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN,proactivebackend-pa.googleapis.com
+
 # > NotebookLM
 DOMAIN-KEYWORD,notebooklm.google
+
 # > Search Labs
 DOMAIN-KEYWORD,labs.google
 
 # Groq
 DOMAIN-SUFFIX,groq.com
+DOMAIN,api.groq.com
 
 # JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
@@ -85,3 +94,42 @@ DOMAIN,pplx-res.cloudinary.com
 # xAI
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
+DOMAIN,api.x.ai
+
+# Mistral AI
+DOMAIN-SUFFIX,mistral.ai
+
+# Cohere
+DOMAIN-SUFFIX,cohere.com
+
+# Together AI
+DOMAIN-SUFFIX,together.ai
+
+# Hugging Face
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+
+# Replicate
+DOMAIN-SUFFIX,replicate.com
+
+# ElevenLabs
+DOMAIN-SUFFIX,elevenlabs.io
+
+# Codeium
+DOMAIN-SUFFIX,codeium.com
+
+# Windsurf
+DOMAIN-SUFFIX,windsurf.com
+
+# Poe
+DOMAIN-SUFFIX,poe.com
+
+# Vercel
+# > v0
+DOMAIN,v0.dev
+
+# Lovable
+DOMAIN-SUFFIX,lovable.dev
+
+# Replit
+DOMAIN-SUFFIX,replit.com
