@@ -6,6 +6,7 @@ DOMAIN,makersuite.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,aiplatform.googleapis.com
+DOMAIN,alkali-pa.clients6.google.com
 
 # > Antigravity
 DOMAIN,antigravity.google
@@ -22,9 +23,12 @@ DOMAIN,gemini.google.com
 DOMAIN,geller-pa.googleapis.com
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,bard-pa.googleapis.com
+DOMAIN-SUFFIX,googlesyndication.com
 
 # > NotebookLM
 DOMAIN-KEYWORD,notebooklm.google
+DOMAIN,notebooklm-pa.googleapis.com
 
 # > Search Labs
 DOMAIN-KEYWORD,labs.google
