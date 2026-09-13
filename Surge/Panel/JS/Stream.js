@@ -241,30 +241,62 @@ async function checkGemini(timeoutMs) {
     const responseStatus = response.response.status || 0;
     const htmlData = response.data || '';
 
-    if (responseStatus === 200) {
-      if (
-        htmlData.includes('not available') ||
-        htmlData.includes('unavailable in your country')
-      ) {
-        return createResult('Gemini', STATUS_NOT_AVAILABLE);
-      }
-
-      const regionMatch = htmlData.match(/,2,1,200,"([A-Z]{2,3})"/);
-
-      if (!regionMatch || !regionMatch[1]) {
-        return createResult('Gemini', STATUS_ERROR);
-      }
-
-      const region = regionMatch[1].slice(0, 2).toUpperCase();
-
-      return createResult('Gemini', STATUS_AVAILABLE, region);
-    }
-
-    if ([403, 404, 302].includes(responseStatus)) {
+    if ([403, 404].includes(responseStatus)) {
       return createResult('Gemini', STATUS_NOT_AVAILABLE);
     }
 
-    return createResult('Gemini', STATUS_ERROR);
+    if (responseStatus !== 200) {
+      return createResult('Gemini', STATUS_ERROR);
+    }
+
+    // 优先判断明确的地区限制提示
+    const unavailableKeywords = [
+      'unavailable in your country',
+      'not available in your country',
+      'not available in your region',
+      'not available in your location',
+      'service is not available',
+      'gemini is not available',
+      'unsupported country',
+      'unsupported region',
+      '/unsupported'
+    ];
+
+    const lowerHtml = htmlData.toLowerCase();
+
+    if (
+      unavailableKeywords.some(keyword =>
+        lowerHtml.includes(keyword.toLowerCase())
+      )
+    ) {
+      return createResult('Gemini', STATUS_NOT_AVAILABLE);
+    }
+
+    // 提取地区
+    let region = '';
+
+    const regionPatterns = [
+      /,2,1,200,"([A-Z]{2,3})"/,
+      /"countryCode":"([A-Z]{2})"/i,
+      /"country":"([A-Z]{2})"/i,
+      /"regionCode":"([A-Z]{2})"/i
+    ];
+
+    for (const pattern of regionPatterns) {
+      const match = htmlData.match(pattern);
+
+      if (match && match[1]) {
+        region = match[1].slice(0, 2).toUpperCase();
+        break;
+      }
+    }
+
+    // 能打开页面但提取不到地区
+    if (!region) {
+      return createResult('Gemini', STATUS_AVAILABLE, 'UN');
+    }
+
+    return createResult('Gemini', STATUS_AVAILABLE, region);
   } catch (error) {
     return createResult('Gemini', STATUS_ERROR);
   }
