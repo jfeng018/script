@@ -53,6 +53,14 @@ DOMAIN-SUFFIX,discordapp.net
 DOMAIN-SUFFIX,discord.media
 DOMAIN-SUFFIX,discord.dev
 
+# Disney+
+DOMAIN-SUFFIX,disneyplus.com
+DOMAIN-SUFFIX,disney-plus.net
+DOMAIN-SUFFIX,disneystreaming.com
+DOMAIN-SUFFIX,bamgrid.com
+DOMAIN-SUFFIX,dssott.com
+DOMAIN,cdn.registerdisney.go.com
+
 # Dropbox
 DOMAIN-SUFFIX,dropbox.com
 DOMAIN-SUFFIX,dropboxapi.com
@@ -118,6 +126,17 @@ DOMAIN-SUFFIX,oculus.com
 DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,oculusvr.com
 
+# Netflix
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN-SUFFIX,fast.com
+DOMAIN-KEYWORD,netflixdnstest
+
 # Pinterest
 DOMAIN-SUFFIX,pinterest.com
 DOMAIN-SUFFIX,pinimg.com
@@ -134,6 +153,14 @@ DOMAIN-SUFFIX,pornhub.com
 DOMAIN-KEYWORD,missav
 DOMAIN-KEYWORD,netflav
 DOMAIN-KEYWORD,javmost
+
+# Spotify
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,spotifycdn.net
+DOMAIN-SUFFIX,spoti.fi
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,pscdn.co
 
 # Steam
 DOMAIN-SUFFIX,steampowered.com
